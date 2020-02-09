@@ -19,12 +19,12 @@ export default function LeftSide(props) {
     <bs.Container>
       <bs.Col className="col-main bg-secondary">
         <bs.Nav className="flex-column" aria-controls="basic-navbar-nav">
-          <Link to="/" className="nav-link">
+          <Link to="/" className="nav-link" style={{ color: 'red' }}>
             All Products ({count})
           </Link>
           {Object.entries(categories).map(([key, value]) => {
             return (
-              <Link key={key} to={`/category/${key}`} className="nav-link">
+              <Link key={key} to={`/category/${key}`} className="nav-link" style={{ color: 'red' }}>
                 {`${key} (${value})`}
               </Link>
             );
