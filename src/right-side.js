@@ -4,7 +4,7 @@ import { Col, Image, ListGroup, Item } from 'react-bootstrap'
 export default function RightSide() {
     return (
         <Col className='col-main bg-secondary'>
-            <h4>Recently Tested <i className="fas fa-star"> </i> </h4>
+            {/* <h4>Recently Tested <i className="fas fa-star"> </i> </h4>
             <ListGroup variant="flush">
                 <ListGroup.Item variant='secondary' action>
                     <p>Assay #1</p>
@@ -19,7 +19,7 @@ export default function RightSide() {
                     
                     <p>Assay #4</p>
                 </ListGroup.Item>
-            </ListGroup>
+            </ListGroup> */}
 
         </Col>
     )

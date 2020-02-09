@@ -19,7 +19,7 @@ function HeaderContainer(props) {
           }}>
             <i className="fas fa-moon" style={{
               fontSize: "2rem"
-            }}></i> Northwest Labs   
+            }}></i> Arctic   
              </h3>_____
           <Link to="/" className="nav-link">Home</Link>
           <Link to="/about" className="nav-link">About</Link>
