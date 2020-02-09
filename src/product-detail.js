@@ -10,7 +10,12 @@ export default function Details(props) {
   let [state, setState] = useState("-1");
 
   if (product == null) {
-    return <h1>Aliens have invaded! Or, product not found.</h1>;
+    return (
+      <bs.Container>
+        <br></br>
+        <h1>WARNING: Aliens have invaded! Or, product not found.</h1>
+      </bs.Container>
+    );
   } else {
     return (
       <bs.Container>
@@ -27,15 +32,14 @@ export default function Details(props) {
             <img
               src={`/images/products/${product.filename}${state}.png`}
               alt=""
-              height='300px'
-              width='300px'
+              height="300px"
+              width="300px"
             />{" "}
             <br></br>
             <img
               onMouseOver={() => setState("-1")}
               onMouseLeave={() => setState("-1")}
-              thumbnail
-              height='30px'
+              height="30px"
               width="30px"
               src={`/images/products/${product.filename}-1.png`}
               alt=""
@@ -43,8 +47,7 @@ export default function Details(props) {
             <img
               onMouseOver={() => setState("-2")}
               onMouseLeave={() => setState("-1")}
-              thumbnail
-              height='30px'
+              height="30px"
               width="30px"
               src={`/images/products/${product.filename}-2.png`}
               alt=""
@@ -52,8 +55,7 @@ export default function Details(props) {
             <img
               onMouseOver={() => setState("-3")}
               onMouseLeave={() => setState("-1")}
-              thumbnail
-              height='30px'
+              height="30px"
               width="30px"
               src={`/images/products/${product.filename}-3.png`}
               alt=""
@@ -61,8 +63,7 @@ export default function Details(props) {
             <img
               onMouseOver={() => setState("-4")}
               onMouseLeave={() => setState("-1")}
-              thumbnail
-              height='30px'
+              height="30px"
               width="30px"
               src={`/images/products/${product.filename}-4.png`}
               alt=""

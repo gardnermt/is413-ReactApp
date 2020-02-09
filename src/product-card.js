@@ -12,7 +12,7 @@ export default function Card(props) {
         />
         <bs.Card.Body>
           <bs.Card.Title>{props.product.name}</bs.Card.Title>
-          {/* <bs.Card.Text>This is an apple.</bs.Card.Text> */}
+          <bs.Card.Text>${props.product.price}</bs.Card.Text>
         </bs.Card.Body>
         <Link
           to={`/product/${props.product.id}`}

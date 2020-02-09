@@ -7,7 +7,7 @@ import { useRouteMatch } from "react-router-dom";
 function Home(props) {
   let arrProducts = Object.values(PRODUCTS);
   const match = useRouteMatch().params.catName;
-  console.log("match", match);
+  // console.log("match", match);
   if (match) {
     arrProducts = arrProducts.filter(product => {
       return product.category === match;

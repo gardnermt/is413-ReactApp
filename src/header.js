@@ -1,6 +1,6 @@
 import React from 'react'
 import * as bs from 'react-bootstrap'
-import { BrowserRouter as Router, Switch, Route, Link, HashRouter } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 function HeaderContainer(props) {

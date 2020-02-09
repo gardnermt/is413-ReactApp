@@ -15,7 +15,7 @@ function App(props) {
   return (
     <div className="App">
       <Router>
-        <bs.Container fluid className="p-0 min-vh-100 d-flex flex-column">
+        <bs.Container fluid className="p-0 min-vh-100 d-flex flex-column w-auto">
           <bs.Row noGutters className="flex-grow-0 flex-shrink-0 shadow-sm">
             <bs.Col
               className="px-3 py-2"

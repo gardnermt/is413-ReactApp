@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, Image, ListGroup, Item } from 'react-bootstrap'
+import { Col } from 'react-bootstrap'
 
 export default function RightSide() {
     return (
